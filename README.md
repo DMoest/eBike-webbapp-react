@@ -1,7 +1,7 @@
 # Bike System Customer Webb App
 
 This repository is the customer webbapp in the project eBike System.
-The customer webbapp is intended to communicate with the server backend, 
+The customer webbapp is intended to communicate with the server backend,
 support customer login for traveling with the system.
 
 ### Start & test the application
@@ -21,4 +21,8 @@ npm run start-dev
 npm run test
 ```
 
+
 Hej.
+=======
+Robin testar igen! Detta borde funka.
+Sofia testar
