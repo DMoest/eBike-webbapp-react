@@ -1,16 +1,19 @@
 {
   "files": {
-    "main.css": "./static/css/main.073c9b0a.css",
-    "main.js": "./static/js/main.2c0ab7a0.js",
+    "main.css": "./static/css/main.baa6ae90.css",
+    "main.js": "./static/js/main.0b3568f1.js",
     "static/js/787.d820a889.chunk.js": "./static/js/787.d820a889.chunk.js",
-    "static/media/logo.svg": "./static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "static/media/ebike__hero-ill.png": "./static/media/ebike__hero-ill.38824f3acc2996caf1db.png",
+    "static/media/ebike__frontend-illustration.png": "./static/media/ebike__frontend-illustration.da37e62f2c5f478dd160.png",
+    "static/media/ebike__simulation-illustration.png": "./static/media/ebike__simulation-illustration.e63f583dc312638a8df5.png",
     "index.html": "./index.html",
-    "main.073c9b0a.css.map": "./static/css/main.073c9b0a.css.map",
-    "main.2c0ab7a0.js.map": "./static/js/main.2c0ab7a0.js.map",
+    "static/media/ebike__logo-white.svg": "./static/media/ebike__logo-white.f82ece3c53474f5d14e8a3423fc19af8.svg",
+    "main.baa6ae90.css.map": "./static/css/main.baa6ae90.css.map",
+    "main.0b3568f1.js.map": "./static/js/main.0b3568f1.js.map",
     "787.d820a889.chunk.js.map": "./static/js/787.d820a889.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.073c9b0a.css",
-    "static/js/main.2c0ab7a0.js"
+    "static/css/main.baa6ae90.css",
+    "static/js/main.0b3568f1.js"
   ]
 }
