@@ -1,15 +1,17 @@
 import DocumentTitle from 'react-document-title'
+import { Link } from 'react-router-dom';
+
 
 // CSS
 import './HomePage.css';
 
 // Img
-import logo from '../../assets/img/ebike__logo-white.svg';
-import heroImg from '../../assets/img/ebike__hero-ill.png';
-import ill__simulation from '../../assets/img/ebike__simulation-illustration.png';
-import ill__backend from '../../assets/img/ebike__backend-illustration.png';
-import ill__frontend from '../../assets/img/ebike__frontend-illustration.png';
-import mock__profile from '../../assets/img/mock__profile-pic.png';
+import logo from '../../../assets/img/ebike__logo-white.svg';
+import heroImg from '../../../assets/img/ebike__hero-ill.png';
+import ill__simulation from '../../../assets/img/ebike__simulation-illustration.png';
+import ill__backend from '../../../assets/img/ebike__backend-illustration.png';
+import ill__frontend from '../../../assets/img/ebike__frontend-illustration.png';
+import mock__profile from '../../../assets/img/mock__profile-pic.png';
 
 function HomePage() {
     return (
@@ -20,6 +22,9 @@ function HomePage() {
                     <div className="home-hero__nav-wrapper">
                         <div className="hero__brand">
                             <img src={logo} className="hero__logo" alt="Ebike logo"/>Ebike
+                        </div>
+                        <div>
+                        <Link to="/login">Login</Link>
                         </div>
                     </div>
                     <div className="home-hero__content-outer-wrapper">
@@ -42,7 +47,7 @@ function HomePage() {
                             Mauris fermentum ex nec turpis iaculis porta. </p>
                         </div>
                     </div>
-                    <div className="home-content__grid-wrapper">
+                    <div className="home-container">
                         <div className="home-content__grid-item">
                             <img src={ill__simulation} className="home-grid__img" alt="Hero illustration"/>
                             <h3 className="h3__grid">Simulering</h3>
