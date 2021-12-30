@@ -1,13 +1,8 @@
-@font-face {
-    /* font-family: 'Moderat Regular'; */
-    /* src: local('Moderat Regular'), url(../../../assets/fonts/Moderat-Extended-Regular.woff2) format('woff2'); */
-}
-
 .home__container {
     max-width: 1300px;
     width: 100%;
     margin: 0 auto;
-    padding: 0px 20px;
+    padding: 0px 0px;
 }
 
 .home-hero__outer-wrapper {
@@ -44,7 +39,6 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 125px 0px;
 }
 
 .home-hero__content-inner-wrapper {
@@ -57,7 +51,7 @@
 
 .home-hero__img {
     margin-bottom: 125px;
-    max-width: 100%;
+    width: 100%;
 }
 
 .home-content__outer-wrapper {
@@ -89,7 +83,7 @@
 }
 
 .home-grid__img {
-    max-width: 100%;
+    width: 95%;
 }
 
 .h3__grid {
