@@ -24,6 +24,7 @@ function Register() {
                     <div className="home-hero__content-outer-wrapper">
                         <div className="home-hero__content-inner-wrapper">
                             <h1>Register</h1>
+                            <Link to="/main"><button>Register with Github</button></Link>
                             <Link to="/login">Login</Link>
                         </div>
                     </div>

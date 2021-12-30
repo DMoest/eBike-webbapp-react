@@ -2,12 +2,12 @@ import DocumentTitle from 'react-document-title'
 import { Link } from 'react-router-dom';
 
 // CSS
-import './Login.css';
+import './Main.css';
 
 // Img
 import logo from '../../assets/img/ebike__logo-white.svg';
 
-function Login() {
+function Main() {
     return (
         <>
             <div className="home-hero__outer-wrapper">
@@ -23,9 +23,8 @@ function Login() {
                     </div>
                     <div className="home-hero__content-outer-wrapper">
                         <div className="home-hero__content-inner-wrapper">
-                            <h1>Login</h1>
-                            <Link to="/main"><button>Login with Github</button></Link>
-                            <Link to="/register">Register</Link>
+                            <h1>Rent</h1>
+                            <Link to="/rent">Rent</Link>
                         </div>
                     </div>
                 </div>
@@ -35,4 +34,4 @@ function Login() {
     )
 }
 
-export default Login
+export default Main
