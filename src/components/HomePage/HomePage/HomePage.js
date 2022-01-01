@@ -24,7 +24,7 @@ function HomePage() {
                             <img src={logo} className="hero__logo" alt="Ebike logo"/>Ebike
                         </div>
                         <div>
-                        <Link to="/login">Login</Link>
+                        <Link to="/auth">Login/Register</Link>
                         </div>
                     </div>
                     <div className="home-hero__content-outer-wrapper">

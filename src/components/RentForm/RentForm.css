@@ -1,0 +1,25 @@
+.rent-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-full-width {
+    width: 90%;
+    border-radius: 10px;
+    padding: 1em;
+    margin: 0.5em;
+}
+
+.btn-full-width {
+    width: 90%;
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 1em;
+    margin: 0.5em;
+    text-align: center;
+    font-weight: bold;
+}
+
+label {
+    margin-left: 0.5em;
+}
