@@ -6,6 +6,7 @@ import './Rent.css';
 
 // Img
 import logo from '../../assets/img/ebike__logo-white.svg';
+import RentForm from '../RentForm/RentForm';
 
 function Rent() {
     return (
@@ -20,19 +21,14 @@ function Rent() {
                     </div>
                     <div className="home-hero__content-outer-wrapper">
                         <div className="home-hero__content-inner-wrapper">
-                            <h1>Rent Bike</h1>
-                            <ul>
-                                <li><Link to="/main"><button>Bike 1</button></Link></li>
-                                <li><Link to="/main"><button>Bike 2</button></Link></li>
-                                <li><Link to="/main"><button>Bike 3</button></Link></li>
-                                <li><Link to="/main"><button>Bike 4</button></Link></li>
-                                <li><Link to="/main"><button>Bike 5</button></Link></li>
-                            </ul>
+                            <h3>Enter the serial number of the bike you want to rent below.</h3>
                         </div>
                     </div>
                 </div>
             </div>
-            <div className="home-content__outer-wrapper"></div>
+            <div className="home-content__outer-wrapper">
+                <RentForm/>
+            </div>
         </>
     )
 }

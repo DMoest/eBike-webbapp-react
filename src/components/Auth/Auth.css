@@ -1,0 +1,19 @@
+.auth-section {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.auth-content__outer-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 0.5em;
+}
+
+a {
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+}
