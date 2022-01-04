@@ -3,6 +3,8 @@ import { createSlice } from '@reduxjs/toolkit'
 export const rentSlice = createSlice({
   name: 'rent',
   initialState: {
+    errorNotFound: null,
+    errorOccupied: null,
     bike: null,
   },
   reducers: {
@@ -16,17 +18,11 @@ export const rentSlice = createSlice({
         }
     },
     rentBike: (state) => {
-      // Redux Toolkit allows us to write "mutating" logic in reducers. It
-      // doesn't actually mutate the state because it uses the Immer library,
-      // which detects changes to a "draft state" and produces a brand new
-      // immutable state based off those changes
+      // Todo: Async call to api and update state with bike or appropriate error.
       state.bike = { id: "bike1" };
     },
     returnBike: (state) => {
-        // Redux Toolkit allows us to write "mutating" logic in reducers. It
-        // doesn't actually mutate the state because it uses the Immer library,
-        // which detects changes to a "draft state" and produces a brand new
-        // immutable state based off those changes
+        // Todo: Async call to update currently rented bike to unoccupied status.
         state.bike = null;
     },
   },

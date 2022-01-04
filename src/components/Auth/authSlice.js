@@ -7,20 +7,15 @@ export const authSlice = createSlice({
   },
   reducers: {
     login: (state) => {
-      // Redux Toolkit allows us to write "mutating" logic in reducers. It
-      // doesn't actually mutate the state because it uses the Immer library,
-      // which detects changes to a "draft state" and produces a brand new
-      // immutable state based off those changes
+      // Todo: Async call to api and uppdate state with user or appropriate error.
       state.authToken = 'authenticated';
     },
     register: (state) => {
-        // Redux Toolkit allows us to write "mutating" logic in reducers. It
-        // doesn't actually mutate the state because it uses the Immer library,
-        // which detects changes to a "draft state" and produces a brand new
-        // immutable state based off those changes
+        // Todo: Async call to api to register new user and update state accordingly.
         state.authToken = 'authenticated';
     },
     logout: (state) => {
+      // Todo: Async call to api?
       state.authToken = null;
     },
   },
