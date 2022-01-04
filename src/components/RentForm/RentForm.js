@@ -1,50 +1,29 @@
-import React from 'react';
-import { Redirect } from 'react-router-dom';
-import BikeActive from '../BikeActive/BikeActive';
-import { withRouter } from 'react-router-dom';
-
+import React, { useState } from 'react';
+import { useDispatch } from 'react-redux';
+import { useHistory } from "react-router-dom";
 
 // CSS
 import './RentForm.css';
+import { rentBike, returnBike } from '../Rent/rentSlice';
 
-class RentForm extends React.Component {
-    constructor(props) {
-      super(props);
-      this.state = {serialNumber: ''};
-  
-      this.handleChange = this.handleChange.bind(this);
-      this.handleSubmit = this.handleSubmit.bind(this);
-    }
-  
-    handleChange(event) {
-      this.setState({serialNumber: event.target.value});
-    }
-  
-    handleSubmit(event) {
-      // Todo: Implement call to api to start ride with the given serial number.
+const RentForm = () => {
+    const [serialNumber, setSerialNumber] = useState("");
+    const dispatch = useDispatch();
+    const history = useHistory();
 
-      let response = true;
-
-      response ? this.props.history.push({
-        pathname: '/bikeActive',
-        state: { serialNumber: this.state.serialNumber }
-      }): this.props.history.push({
-        pathname: '/bikeActive',
-        state: { serialNumber: this.state.serialNumber }
-      });
-
-      event.preventDefault();
+    const handleSubmit = () => {
+        dispatch(rentBike());
+        history.replace("/");
     }
-  
-    render() {
-      return (
-        <form class="rent-form" onSubmit={this.handleSubmit}>
-            <label>Serial-number:</label>
-            <input class="input-full-width" type="text" value={this.state.serialNumber} onChange={this.handleChange} />
-            <input class="btn-full-width" type="submit" value="Submit" />
-        </form>
-      );
-    }
+
+    return (
+      <form class="rent-form" onSubmit={handleSubmit}>
+          <label>Serial-number:</label>
+          <input class="input-full-width" type="text" value={serialNumber} onChange={e => setSerialNumber(e.target.value)} />
+          <button class="btn-full-width" onClick={ handleSubmit }>Rent</button>
+      </form>
+    );
   }
 
-  export default withRouter(RentForm);
+
+  export default RentForm;

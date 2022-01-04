@@ -1,28 +1,25 @@
 import React from 'react';
 import DocumentTitle from 'react-document-title';
 import { withRouter } from 'react-router-dom';
+import { useSelector, useDispatch } from 'react-redux';
 
 import logo from '../../assets/img/ebike__logo-white.svg';
 import PredictedCost from '../PredictedCost/PredictedCost';
 // CSS
 import './BikeActive.css';
+import { returnBike } from '../Rent/rentSlice';
 
-class BikeActive extends React.Component {
-    constructor(props) {
-        super(props);
+const BikeActive = () => {
 
-        this.stopRental = this.stopRental.bind(this);
-    }
+    const root = useSelector((state) => state.root);
+    const dispatch = useDispatch();
 
-    stopRental() {
+    const stopRental = () => {
         // Todo: Implement call to api to end the current rental period.
-
-        this.props.history.push({
-            pathname: '/main',
-        });
+        dispatch(returnBike());
     }
 
-    render() {
+
         return (
             <>
                 <div className="home-hero__outer-wrapper">
@@ -36,7 +33,7 @@ class BikeActive extends React.Component {
 
                         <div className="home-hero__content-outer-wrapper">
                             <div className="home-hero__content-inner-wrapper">
-                                <h3>Rental period started for bike: {this.props.location.state.serialNumber}</h3>
+                                <h3>Rental period started for bike: {root.rent.bike.id}</h3>
                             </div>
                         </div>
                     </div>
@@ -46,11 +43,11 @@ class BikeActive extends React.Component {
                         <p>Please note that extra charges may apply if you park outside an approved parking area.</p>
                     </div>
                     <PredictedCost/>
-                    <button class="btn-full-width red" onClick={this.stopRental}>Park bike</button>
+                    <button class="btn-full-width red" onClick={stopRental}>Park bike</button>
                 </div>
             </>
         );
     }
-}
+
 
     export default withRouter(BikeActive);
