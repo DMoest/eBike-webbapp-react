@@ -1,0 +1,36 @@
+.home__bg {
+  background: #eee5df;
+  min-height: 100vh;
+}
+
+.home__wrapper {
+  overflow: hidden;
+  width: 100vw;
+}
+
+.home__img {
+  width: 100%;
+  height: 50%;
+  object-fit: cover;
+}
+
+.home__btn-wrapper {
+  display: flex;
+  margin-top: 20px;
+  flex-direction: column;
+}
+
+.home__btn-spacer {
+  margin-top: 15px;
+}
+
+@media (max-width: 800px) {
+  .home-grid__img {
+    width: 100%;
+  }
+
+  .home-content__grid-item {
+    aspect-ratio: none;
+    margin-bottom: 50px;
+  }
+}

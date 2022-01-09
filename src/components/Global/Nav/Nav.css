@@ -1,0 +1,47 @@
+.nav__outer-wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 0px;
+}
+
+.nav__fullpage-outer-wrapper {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  z-index: 10;
+  background: #1d1e22;
+  display: flex;
+  padding: 35px;
+  color: #fff;
+}
+
+.nav__fullpage-inner-wrapper {
+  align-self: flex-end;
+  display: flex;
+  flex-direction: column;
+}
+
+.nav__link {
+  color: #fff;
+  font-weight: 500;
+  font-size: 1.8em;
+  margin-top: 1.5em;
+  font-family: "Moderat Regular", sans-serif !important;
+}
+
+.active {
+  color: #2bb786;
+}
+
+.nav__inner-wrapper {
+  align-self: flex-end;
+}
+
+.nav__menu {
+  z-index: 11;
+}
+
+.nav__icon {
+  max-width: 25px;
+  mix-blend-mode: difference;
+}
