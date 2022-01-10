@@ -1,25 +1,20 @@
-.rent-form {
-    display: flex;
-    flex-direction: column;
+input {
+  width: 100%;
+  padding: 12px;
+  outline: none;
+  border: 1px solid #919191;
+  border-radius: 4px;
 }
 
-.input-full-width {
-    width: 90%;
-    border-radius: 10px;
-    padding: 1em;
-    margin: 0.5em;
+form {
+  margin-top: 20px;
 }
 
-.btn-full-width {
-    width: 90%;
-    border: 2px solid black;
-    border-radius: 10px;
-    padding: 1em;
-    margin: 0.5em;
-    text-align: center;
-    font-weight: bold;
+.input__rent {
+  margin: 15px 0px;
 }
 
-label {
-    margin-left: 0.5em;
+.form__rent {
+  display: flex;
+  flex-direction: column;
 }

@@ -10,7 +10,7 @@ import Nav from "../Global/Nav/Nav";
 import "./HomePage.css";
 
 // Img
-import heroImg from "../../assets/img/home__ill-cordova.png";
+import heroImg from "../../assets/img/home__ill.svg";
 
 function HomePage() {
   return (

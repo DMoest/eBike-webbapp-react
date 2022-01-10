@@ -42,7 +42,9 @@ function Nav() {
 
       <div className="wrapper">
         <div className="nav__outer-wrapper">
-          <div className="nav__brand">Ebike</div>
+          <div className="nav__brand">
+            <p className="nav__brand-link">Ebike</p>
+          </div>
           <div className="nav__menu" onClick={onClick}>
             {showNav ? (
               <img

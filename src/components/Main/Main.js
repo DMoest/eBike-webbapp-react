@@ -3,6 +3,7 @@ import DocumentTitle from "react-document-title";
 import { Link } from "react-router-dom";
 
 import Nav from "../Global/Nav/Nav";
+import BtnPrimary from "../Global/Buttons/BtnPrimary";
 
 // CSS
 import "./Main.css";
@@ -14,29 +15,13 @@ function Main() {
   return (
     <>
       <Nav />
-      <div className="home-hero__outer-wrapper">
-        <DocumentTitle title="Hem"></DocumentTitle>
-        <div className="home__container">
-          <div className="home-hero__nav-wrapper">
-            <div className="hero__brand">
-              <img src={logo} className="hero__logo" alt="Ebike logo" />
-              Ebike
-            </div>
-          </div>
-          <div className="home-hero__content-outer-wrapper">
-            <div className="home-hero__content-inner-wrapper">
-              <h3>
-                Welcome to the app! Tap the button below to start the process of
-                renting a bike in your area
-              </h3>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div className="main-content__outer-wrapper">
-        <div class="btn-full-width-large">
+      <DocumentTitle title="Hyr"></DocumentTitle>
+      <div className="wrapper">
+        <h1>Hyr cykel</h1>
+        Välkommen. Klicka på knappen nedan för att...
+        <div className="home__btn-wrapper">
           <Link to="/rent">
-            <h1>Rent bike</h1>
+            <BtnPrimary text={"Hyr cykel"} />
           </Link>
         </div>
       </div>

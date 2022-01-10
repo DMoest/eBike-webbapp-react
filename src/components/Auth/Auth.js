@@ -6,6 +6,7 @@ import DocumentTitle from "react-document-title";
 // import { Link } from "react-router-dom";
 
 import Nav from "../Global/Nav/Nav";
+import BtnPrimary from "../Global/Buttons/BtnPrimary";
 
 // CSS
 import "./Auth.css";
@@ -30,30 +31,18 @@ const Auth = () => {
 
   return (
     <>
+      <DocumentTitle title="Auth"></DocumentTitle>
       <Nav />
-      <div className="home-hero__outer-wrapper">
-        <DocumentTitle title="Hem"></DocumentTitle>
-        <div className="home__container">
-          <div className="home-hero__content-outer-wrapper">
-            <div className="home-hero__content-inner-wrapper">
-              <h3>
-                Please login or Register with Github using the buttons below.
-              </h3>
-            </div>
+      <div className="wrapper">
+        <h1>Auth</h1>
+        <p>
+          Logga in eller registrera dig genom att klicka på knapparna nedan.
+        </p>
+        <div className="home__btn-wrapper">
+          <BtnPrimary text={"Logga in"} onClick={handleLogin} />
+          <div className="home__btn-spacer">
+            <BtnPrimary text={"Registrera dig"} onClick={handleRegister} />
           </div>
-        </div>
-      </div>
-      <div className="auth-content__outer-wrapper">
-        <div class="auth-section">
-          <button class="btn-full-width" onClick={handleLogin}>
-            Login <FaGithub />
-          </button>
-        </div>
-
-        <div class="auth-section">
-          <button class="btn-full-width" onClick={handleRegister}>
-            Register <FaGithub />
-          </button>
         </div>
       </div>
     </>

@@ -45,3 +45,9 @@
   max-width: 25px;
   mix-blend-mode: difference;
 }
+
+.nav__brand-link {
+  color: #000;
+  font-family: "Moderat Extended", sans-serif;
+  font-size: 1.1em;
+}

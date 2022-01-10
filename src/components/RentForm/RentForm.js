@@ -4,6 +4,7 @@ import { useHistory } from "react-router-dom";
 // CSS
 import "./RentForm.css";
 import { rentBike, returnBike } from "../Rent/rentSlice";
+import BtnPrimary from "../Global/Buttons/BtnPrimary";
 
 const RentForm = () => {
   const [serialNumber, setSerialNumber] = useState("");
@@ -16,20 +17,16 @@ const RentForm = () => {
   };
 
   return (
-    <>
-      <form class="rent-form" onSubmit={handleSubmit}>
-        <label>Serial-number:</label>
-        <input
-          class="input-full-width"
-          type="text"
-          value={serialNumber}
-          onChange={(e) => setSerialNumber(e.target.value)}
-        />
-        <button class="btn-full-width" onClick={handleSubmit}>
-          Rent
-        </button>
-      </form>
-    </>
+    <form class="form__rent" onSubmit={handleSubmit}>
+      <label>Serialnummer</label>
+      <input
+        class="input__rent "
+        type="text"
+        value={serialNumber}
+        onChange={(e) => setSerialNumber(e.target.value)}
+      />
+      <BtnPrimary text={"Hyr cykel"} onClick={handleSubmit} />
+    </form>
   );
 };
 

@@ -1,6 +1,6 @@
 import React from "react";
 import { useSelector } from "react-redux";
-import { Switch, Route } from "react-router-dom";
+import { Switch, Route, BrowserRouter } from "react-router-dom";
 
 // Pages
 import Main from "./components/Main/Main";
@@ -27,10 +27,12 @@ const App = () => {
         (console.log(root),
         !root.auth.authToken && !root.rent.bike ? (
           <>
-            <Switch>
-              <Route exact path="/" component={HomePage} />
-              <Route exact path="/auth" component={Auth} />
-            </Switch>
+            <BrowserRouter>
+              <Switch>
+                <Route exact path="/" component={HomePage} />
+                <Route exact path="/auth" component={Auth} />
+              </Switch>
+            </BrowserRouter>
           </>
         ) : root.auth.authToken && root.rent.bike ? (
           <>
@@ -38,12 +40,14 @@ const App = () => {
           </>
         ) : (
           <>
-            <Switch>
-              <Route exact path="/" component={Main} />
-              <Route exact path="/rent" component={Rent} />
-              <Route exact path="/travels" component={Travels} />
-              <Route exact path="/profile" component={Profile} />
-            </Switch>
+            <BrowserRouter>
+              <Switch>
+                <Route exact path="/" component={Main} />
+                <Route exact path="/rent" component={Rent} />
+                <Route exact path="/travels" component={Travels} />
+                <Route exact path="/profile" component={Profile} />
+              </Switch>
+            </BrowserRouter>
           </>
         ))
       }
