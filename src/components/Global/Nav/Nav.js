@@ -7,6 +7,7 @@ import "./Nav.css";
 
 import menu__icon_dark from "../../../assets/img/icons/menu__icon-dark.svg";
 import menu__icon_white from "../../../assets/img/icons/menu__icon-white.svg";
+import logo from "../../../assets/img/ebike__logo.svg";
 
 function Nav() {
   const [showNav, setShowNav] = useState(false);
@@ -43,7 +44,7 @@ function Nav() {
       <div className="wrapper">
         <div className="nav__outer-wrapper">
           <div className="nav__brand">
-            <p className="nav__brand-link">Ebike</p>
+            <img src={logo} alt="logo" class="nav__logo" />
           </div>
           <div className="nav__menu" onClick={onClick}>
             {showNav ? (

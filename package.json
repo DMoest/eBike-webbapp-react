@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "private": true,
   "dependencies": {
+    "@craco/craco": "^6.4.3",
     "@reduxjs/toolkit": "^1.7.1",
     "@testing-library/jest-dom": "^5.16.1",
     "@testing-library/react": "^12.1.2",
@@ -26,7 +27,7 @@
     "build": "reco checkversion && react-scripts build && reco copy && cordova build",
     "test": "echo \"Error: no test specified\" && exit 1",
     "eject": "react-scripts eject",
-    "reactstart": "react-scripts start"
+    "reactstart": "craco start"
   },
   "eslintConfig": {
     "extends": [

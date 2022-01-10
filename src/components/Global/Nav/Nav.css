@@ -2,6 +2,7 @@
   display: flex;
   justify-content: space-between;
   padding: 15px 0px;
+  align-items: center;
 }
 
 .nav__fullpage-outer-wrapper {
@@ -50,4 +51,8 @@
   color: #000;
   font-family: "Moderat Extended", sans-serif;
   font-size: 1.1em;
+}
+
+.nav__logo {
+  width: 70px;
 }

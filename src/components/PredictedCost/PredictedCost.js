@@ -1,7 +1,7 @@
 import React from "react";
 
 // CSS
-import './PredictedCost.css';
+import "./PredictedCost.css";
 
 class Counter extends React.Component {
   constructor(props) {
@@ -9,11 +9,11 @@ class Counter extends React.Component {
     this.state = {
       elapsedTime: 0,
       nextTarget: 60,
-      cost: 0
+      cost: 0,
     };
 
     this.countUp = this.countUp.bind(this);
-    this.startCounting()
+    this.startCounting();
   }
 
   startCounting() {
@@ -23,8 +23,11 @@ class Counter extends React.Component {
   countUp() {
     this.setState(({ elapsedTime }) => ({ elapsedTime: elapsedTime + 1 }));
     if (this.state.elapsedTime == this.state.nextTarget) {
-      this.setState({cost: this.state.cost += 1, nextTarget: this.state.nextTarget + 60});
-    } 
+      this.setState({
+        cost: (this.state.cost += 1),
+        nextTarget: this.state.nextTarget + 60,
+      });
+    }
   }
 
   render() {
@@ -36,4 +39,4 @@ class Counter extends React.Component {
   }
 }
 
-export default Counter
+export default Counter;

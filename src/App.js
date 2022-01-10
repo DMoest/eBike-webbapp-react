@@ -9,13 +9,9 @@ import Auth from "./components/Auth/Auth";
 import HomePage from "./components/HomePage/HomePage";
 import BikeActive from "./components/BikeActive/BikeActive";
 import Travels from "./components/Travels/Travels";
-import Profile from "./components/Profile/Profile";
-
-// Global components
-// import Nav from "./components/Global/Nav/Nav";
+import Profile from "./pages/Profile/Profile";
 
 // CSS
-import "./App.css";
 import "./css/Global.css";
 
 const App = () => {
