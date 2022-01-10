@@ -1,13 +1,12 @@
-import React from "react";
 import DocumentTitle from "react-document-title";
 import { withRouter } from "react-router-dom";
 import { useSelector, useDispatch } from "react-redux";
 
-import logo from "../../assets/img/ebike__logo-white.svg";
-import PredictedCost from "../PredictedCost/PredictedCost";
+import logo from "@/assets/img/ebike__logo-white.svg";
+import PredictedCost from "@/components/PredictedCost/PredictedCost";
 // CSS
 import "./BikeActive.css";
-import { returnBike } from "../Rent/rentSlice";
+import { returnBike } from "@/pages/Rent/rentSlice";
 
 const BikeActive = () => {
   const root = useSelector((state) => state.root);

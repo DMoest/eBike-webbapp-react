@@ -1,4 +1,4 @@
-import Nav from "../Global/Nav/Nav";
+import Nav from "@/components/Global/Nav/Nav";
 import axios from "axios";
 
 function Travels() {

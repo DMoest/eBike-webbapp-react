@@ -2,13 +2,13 @@ import DocumentTitle from "react-document-title";
 import { Link } from "react-router-dom";
 
 // Components
-import Nav from "../Global/Nav/Nav";
+import Nav from "@/components/Global/Nav/Nav";
 
 // CSS
 import "./Rent.css";
 
 // Img
-import RentForm from "../RentForm/RentForm";
+import RentForm from "@/components/RentForm/RentForm";
 
 function Rent() {
   return (

@@ -3,8 +3,8 @@ import { useDispatch } from "react-redux";
 import { useHistory } from "react-router-dom";
 // CSS
 import "./RentForm.css";
-import { rentBike, returnBike } from "../Rent/rentSlice";
-import BtnPrimary from "../Global/Buttons/BtnPrimary";
+import { rentBike, returnBike } from "@/pages/Rent/rentSlice";
+import BtnPrimary from "@/components/Global/Buttons/BtnPrimary";
 
 const RentForm = () => {
   const [serialNumber, setSerialNumber] = useState("");

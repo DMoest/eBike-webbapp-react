@@ -3,13 +3,13 @@ import { useSelector } from "react-redux";
 import { Switch, Route, BrowserRouter } from "react-router-dom";
 
 // Pages
-import Main from "./components/Main/Main";
-import Rent from "./components/Rent/Rent";
-import Auth from "./components/Auth/Auth";
-import HomePage from "./components/HomePage/HomePage";
-import BikeActive from "./components/BikeActive/BikeActive";
-import Travels from "./components/Travels/Travels";
-import Profile from "./pages/Profile/Profile";
+import Main from "@/pages/Main/Main";
+import Rent from "@/pages/Rent/Rent";
+import Auth from "@/pages/Auth/Auth";
+import HomePage from "@/pages/HomePage/HomePage";
+import BikeActive from "@/pages/BikeActive/BikeActive";
+import Travels from "@/pages/Travels/Travels";
+import Profile from "@/pages/Profile/Profile";
 
 // CSS
 import "./css/Global.css";

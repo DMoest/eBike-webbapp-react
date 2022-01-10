@@ -2,15 +2,15 @@ import DocumentTitle from "react-document-title";
 import { Link } from "react-router-dom";
 
 // components
-import BtnPrimary from "../Global/Buttons/BtnPrimary";
-import BtnSecondary from "../Global/Buttons/BtnSecondary";
-import Nav from "../Global/Nav/Nav";
+import BtnPrimary from "@/components/Global/Buttons/BtnPrimary";
+import BtnSecondary from "@/components/Global/Buttons/BtnSecondary";
+import Nav from "@/components/Global/Nav/Nav";
 
 // CSS
 import "./HomePage.css";
 
 // Img
-import heroImg from "../../assets/img/home__ill.svg";
+import heroImg from "@/assets/img/home__ill.svg";
 
 function HomePage() {
   return (

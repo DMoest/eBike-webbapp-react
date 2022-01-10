@@ -5,8 +5,8 @@ import { login, register } from "./authSlice";
 import DocumentTitle from "react-document-title";
 // import { Link } from "react-router-dom";
 
-import Nav from "../Global/Nav/Nav";
-import BtnPrimary from "../Global/Buttons/BtnPrimary";
+import Nav from "@/components/Global/Nav/Nav";
+import BtnPrimary from "@/components/Global/Buttons/BtnPrimary";
 
 // CSS
 import "./Auth.css";
