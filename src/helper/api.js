@@ -1,6 +1,5 @@
 import axios from "axios";
-
-import { getCookie } from "./utils";
+// import { getCookie } from "./utils";
 
 export default class Api {
   constructor() {
@@ -10,7 +9,7 @@ export default class Api {
   }
 
   init = () => {
-    this.api_token = getCookie("ACCESS_TOKEN");
+    // this.api_token = getCookie("ACCESS_TOKEN");
 
     let headers = {
       Accept: "application/json",
@@ -31,6 +30,10 @@ export default class Api {
 
   // Customer
   getUserProfile = (params) => {
-    return this.init().get("/user", { params: params });
+    return this.init().get("/user/profile", { params: params });
+  };
+
+  getUserTravels = (params) => {
+    return this.init().get("/user/travels", { params: params });
   };
 }

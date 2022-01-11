@@ -1,17 +1,18 @@
-import DocumentTitle from "react-document-title";
 import { withRouter } from "react-router-dom";
 import { useSelector, useDispatch } from "react-redux";
+import DocumentTitle from "react-document-title";
 
-import logo from "@/assets/img/ebike__logo-white.svg";
-import PredictedCost from "@/components/PredictedCost/PredictedCost";
 // CSS
 import "./BikeActive.css";
 import { returnBike } from "@/pages/Rent/rentSlice";
 
+// Components
 import Nav from "@/components/Global/Nav/Nav";
 import BtnPrimary from "@/components/Global/Buttons/BtnPrimary";
+import PredictedCost from "@/components/PredictedCost/PredictedCost";
+
+// Icons
 import icon__scooter from "@/assets/img/icons/icon__scooter-white.svg";
-import BtnBack from "@/components/Global/BtnBack/BtnBack";
 
 const BikeActive = () => {
   const root = useSelector((state) => state.root);
@@ -24,6 +25,7 @@ const BikeActive = () => {
 
   return (
     <>
+      <DocumentTitle title="Ebike - Aktiv Scooter"></DocumentTitle>
       <Nav />
       <div className="wrapper">
         <h1>Hyrtiden har startat för scooter id {root.rent.bike.id}</h1>

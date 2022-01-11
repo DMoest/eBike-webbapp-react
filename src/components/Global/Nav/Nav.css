@@ -64,6 +64,14 @@
   font-size: 1.1em;
 }
 
+.nav__brand {
+  font-family: "Moderat Medium", sans-serif;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
 .nav__logo {
-  width: 70px;
+  width: 15px;
+  margin-right: 7px;
 }

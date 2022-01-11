@@ -2,6 +2,7 @@ import React from "react";
 
 // CSS
 import "./PredictedCost.css";
+// import icon__money from "@/assets/img/icons/icon__money.svg";
 
 class Counter extends React.Component {
   constructor(props) {
@@ -34,6 +35,7 @@ class Counter extends React.Component {
     return (
       <div>
         <div class="predictedcost__counter">
+          {/* <img src={icon__money} alt="timer icon"></img>  */}
           Uppskattad kostnad: <span>{this.state.cost} Sek</span>
         </div>
       </div>

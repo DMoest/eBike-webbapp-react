@@ -14,7 +14,7 @@ import icon__profile from "@/assets/img/icons/icon__profile-black.svg";
 import "./Main.css";
 
 function Main() {
-  const [customerName, setCustomerName] = useState("Robin");
+  const [customerName, setCustomerName] = useState("Username");
 
   return (
     <>
@@ -22,7 +22,11 @@ function Main() {
       <DocumentTitle title="Ebike - Hyr scooter"></DocumentTitle>
       <div className="wrapper">
         <h1>Välkommen</h1>
-        Goddag {customerName}. Klicka nedan för att hyra en scooter.
+        <p>
+          Goddag {customerName}. Lås upp scootern genom att klicka på knappen
+          nedan och skriv in dess nummer. Uthyrningstiden börjar direkt efter
+          lyckad upplåsning.
+        </p>
         <div className="home__btn-wrapper">
           <Link to="/rent">
             <BtnPrimary text={"Hyr scooter"} icon={icon__scooter} />

@@ -1,30 +1,36 @@
 import { useState, useEffect } from "react";
-import axios from "axios";
+import Api from "@/helper/api";
 
+// Components
 import Nav from "@/components/Global/Nav/Nav";
 import DocumentTitle from "react-document-title";
+import BtnBack from "@/components/Global/BtnBack/BtnBack";
+import ErrorNotice from "@/components/Global/ErrorNotice/ErrorNotice";
 
+// CSS
 import "./Profile.css";
 
-import BtnBack from "@/components/Global/BtnBack/BtnBack";
-
 function Profile() {
-  const url = process.env.REACT_APP_API_BASE_URL + "/user/profile";
   const [profileData, setProfileData] = useState([]);
+  const [error, setError] = useState("");
 
-  // TODO: Breakout this
-  const getBikes = async () => {
-    try {
-      const res = await axios.get(url);
-      setProfileData(res);
-    } catch (err) {
-      console.log(err);
-    }
-  };
+  // const api = new Api();
+  // const user = "temp";
 
-  useEffect(() => {
-    getBikes();
-  }, []);
+  // const getUserData = () => {
+  //   api
+  //     .getUserProfile(user)
+  //     .then((res) => {
+  //       setProfileData(res.data.user);
+  //     })
+  //     .catch((err) => {
+  //       setError(err);
+  //     });
+  // };
+
+  // useEffect(() => {
+  //   getUserData();
+  // }, []);
 
   return (
     <>
@@ -33,7 +39,7 @@ function Profile() {
       <div className="wrapper">
         <BtnBack url={"/"} />
         <h1>Profil</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        {error ? <ErrorNotice error={error} /> : null}
       </div>
     </>
   );

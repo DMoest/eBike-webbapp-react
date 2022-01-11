@@ -7,7 +7,7 @@
 
 @font-face {
   font-family: "Moderat Medium";
-  src: url("../assets/fonts/Moderat-Extended-Medium.woff2");
+  src: url("@/assets/fonts/Moderat-Extended-Medium.woff2");
 }
 
 /*Basics*/
@@ -52,7 +52,6 @@ h3 {
 }
 
 p {
-  opacity: 0.7;
   line-height: 1.5em;
 }
 
