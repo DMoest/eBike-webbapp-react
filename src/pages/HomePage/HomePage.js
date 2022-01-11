@@ -22,7 +22,7 @@ function HomePage() {
           <img src={heroImg} alt="hero" className="home__img" />
           <div className="wrapper">
             <h1>Den ultimata elscooter-simulatorn</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <p>Registrera dig, hoppa på scootern och kör igång</p>
             <div className="home__btn-wrapper">
               <Link to="/auth">
                 <BtnPrimary text={"Logga in"} />

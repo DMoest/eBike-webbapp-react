@@ -7,6 +7,7 @@ import DocumentTitle from "react-document-title";
 
 import Nav from "@/components/Global/Nav/Nav";
 import BtnPrimary from "@/components/Global/Buttons/BtnPrimary";
+import BtnSecondary from "@/components/Global/Buttons/BtnSecondary";
 
 // CSS
 import "./Auth.css";
@@ -41,7 +42,7 @@ const Auth = () => {
         <div className="home__btn-wrapper">
           <BtnPrimary text={"Logga in"} onClick={handleLogin} />
           <div className="home__btn-spacer">
-            <BtnPrimary text={"Registrera dig"} onClick={handleRegister} />
+            <BtnSecondary text={"Registrera dig"} onClick={handleRegister} />
           </div>
         </div>
       </div>

@@ -14,6 +14,8 @@ function Profile() {
   const [profileData, setProfileData] = useState([]);
   const [error, setError] = useState("");
 
+  // TODO: Uncomment
+
   // const api = new Api();
   // const user = "temp";
 
