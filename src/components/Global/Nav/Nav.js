@@ -5,9 +5,9 @@ import { logout } from "@/pages/Auth/authSlice";
 
 import "./Nav.css";
 
-import menu__icon_dark from "../../../assets/img/icons/menu__icon-dark.svg";
-import menu__icon_white from "../../../assets/img/icons/menu__icon-white.svg";
-import logo from "../../../assets/img/ebike__logo.svg";
+import menu__icon_dark from "@/assets/img/icons/menu__icon-dark.svg";
+import menu__icon_white from "@/assets/img/icons/menu__icon-white.svg";
+import logo from "@/assets/img/ebike__logo.svg";
 
 function Nav() {
   const [showNav, setShowNav] = useState(false);
