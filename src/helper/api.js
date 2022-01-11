@@ -29,6 +29,7 @@ export default class Api {
     return this.client;
   };
 
+  // Customer
   getUserProfile = (params) => {
     return this.init().get("/user", { params: params });
   };

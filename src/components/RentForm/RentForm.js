@@ -6,6 +6,8 @@ import "./RentForm.css";
 import { rentBike, returnBike } from "@/pages/Rent/rentSlice";
 import BtnPrimary from "@/components/Global/Buttons/BtnPrimary";
 
+import icon__scooter from "@/assets/img/icons/icon__scooter-white.svg";
+
 const RentForm = () => {
   const [serialNumber, setSerialNumber] = useState("");
   const dispatch = useDispatch();
@@ -25,7 +27,11 @@ const RentForm = () => {
         value={serialNumber}
         onChange={(e) => setSerialNumber(e.target.value)}
       />
-      <BtnPrimary text={"Hyr cykel"} onClick={handleSubmit} />
+      <BtnPrimary
+        text={"Hyr cykel"}
+        onClick={handleSubmit}
+        icon={icon__scooter}
+      />
     </form>
   );
 };

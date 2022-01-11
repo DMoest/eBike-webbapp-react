@@ -7,6 +7,9 @@
   padding: 12px 25px;
   font-weight: 600;
   cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .btn__primary {
@@ -16,7 +19,12 @@
 }
 
 .btn__secondary {
-  background: #eee5df;
+  background: none;
   color: #000;
   border: 1px solid #000;
+}
+
+.btn__icon {
+  width: 15px;
+  margin-right: 5px;
 }

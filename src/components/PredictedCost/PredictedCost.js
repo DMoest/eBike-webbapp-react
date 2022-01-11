@@ -33,7 +33,9 @@ class Counter extends React.Component {
   render() {
     return (
       <div>
-        <div class="counter">Estimated cost: {this.state.cost} Sek</div>
+        <div class="predictedcost__counter">
+          Uppskattad kostnad: <span>{this.state.cost} Sek</span>
+        </div>
       </div>
     );
   }

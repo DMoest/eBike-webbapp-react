@@ -16,8 +16,8 @@ function Rent() {
       <Nav />
       <DocumentTitle title="Hem"></DocumentTitle>
       <div className="wrapper">
-        <h1>Hyr cykel</h1>
-        <p>Skriv in serialnumret på cykeln du vill hyra.</p>
+        <h1>Hyr scooter</h1>
+        <p>Skriv in serialnumret på scootern du vill hyra.</p>
         <RentForm />
       </div>
     </>

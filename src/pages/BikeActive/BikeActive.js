@@ -8,6 +8,10 @@ import PredictedCost from "@/components/PredictedCost/PredictedCost";
 import "./BikeActive.css";
 import { returnBike } from "@/pages/Rent/rentSlice";
 
+import Nav from "@/components/Global/Nav/Nav";
+import BtnPrimary from "@/components/Global/Buttons/BtnPrimary";
+import icon__scooter from "@/assets/img/icons/icon__scooter-white.svg";
+
 const BikeActive = () => {
   const root = useSelector((state) => state.root);
   const dispatch = useDispatch();
@@ -19,34 +23,19 @@ const BikeActive = () => {
 
   return (
     <>
-      <div className="home-hero__outer-wrapper">
-        <DocumentTitle title="BikeActive"></DocumentTitle>
-        <div className="home__container">
-          <div className="home-hero__nav-wrapper">
-            <div className="hero__brand">
-              <img src={logo} className="hero__logo" alt="Ebike logo" />
-              Ebike
-            </div>
-          </div>
-
-          <div className="home-hero__content-outer-wrapper">
-            <div className="home-hero__content-inner-wrapper">
-              <h3>Rental period started for bike: {root.rent.bike.id}</h3>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div className="home-content__outer-wrapper content-center">
-        <div class="warning">
-          <p>
-            Please note that extra charges may apply if you park outside an
-            approved parking area.
-          </p>
-        </div>
+      <Nav />
+      <div className="wrapper">
+        <h1>Hyrtiden har startat för scooter id {root.rent.bike.id}</h1>
+        <p>
+          Vänligen notera att extra kostnader kan tillkomma om du parkerar
+          scootern utanför acceptabla parkeringsplatser.
+        </p>
         <PredictedCost />
-        <button class="btn-full-width red" onClick={stopRental}>
-          Park bike
-        </button>
+        <BtnPrimary
+          text={"Parkera scooter"}
+          onClick={stopRental}
+          icon={icon__scooter}
+        ></BtnPrimary>
       </div>
     </>
   );

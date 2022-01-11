@@ -22,7 +22,7 @@ function Profile() {
 
   useEffect(() => {
     getBikes();
-  });
+  }, []);
 
   return (
     <>
