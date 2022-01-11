@@ -6,6 +6,8 @@ import DocumentTitle from "react-document-title";
 
 import "./Profile.css";
 
+import BtnBack from "@/components/Global/BtnBack/BtnBack";
+
 function Profile() {
   const url = process.env.REACT_APP_API_BASE_URL + "/user/profile";
   const [profileData, setProfileData] = useState([]);
@@ -29,6 +31,7 @@ function Profile() {
       <DocumentTitle title="Ebike - Profil"></DocumentTitle>
       <Nav />
       <div className="wrapper">
+        <BtnBack url={"/"} />
         <h1>Profil</h1>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
       </div>

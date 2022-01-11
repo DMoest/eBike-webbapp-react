@@ -11,6 +11,7 @@ import { returnBike } from "@/pages/Rent/rentSlice";
 import Nav from "@/components/Global/Nav/Nav";
 import BtnPrimary from "@/components/Global/Buttons/BtnPrimary";
 import icon__scooter from "@/assets/img/icons/icon__scooter-white.svg";
+import BtnBack from "@/components/Global/BtnBack/BtnBack";
 
 const BikeActive = () => {
   const root = useSelector((state) => state.root);

@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 
 // Components
 import Nav from "@/components/Global/Nav/Nav";
+import BtnBack from "@/components/Global/BtnBack/BtnBack";
 
 // CSS
 import "./Rent.css";
@@ -16,8 +17,9 @@ function Rent() {
       <Nav />
       <DocumentTitle title="Hem"></DocumentTitle>
       <div className="wrapper">
+        <BtnBack url="/" />
         <h1>Hyr scooter</h1>
-        <p>Skriv in serialnumret på scootern du vill hyra.</p>
+        <p>Skriv in numret på scootern du vill hyra.</p>
         <RentForm />
       </div>
     </>

@@ -34,7 +34,7 @@ const Auth = () => {
       <DocumentTitle title="Auth"></DocumentTitle>
       <Nav />
       <div className="wrapper">
-        <h1>Auth</h1>
+        <h1>Autentisering</h1>
         <p>
           Logga in eller registrera dig genom att klicka på knapparna nedan.
         </p>

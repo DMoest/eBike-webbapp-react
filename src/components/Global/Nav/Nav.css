@@ -15,6 +15,13 @@
   display: flex;
   padding: 35px;
   color: #fff;
+  overflow: hidden;
+}
+
+.nav__bg {
+  position: absolute;
+  top: 0;
+  right: 0;
 }
 
 .nav__fullpage-inner-wrapper {
