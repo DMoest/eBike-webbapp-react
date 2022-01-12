@@ -25,13 +25,9 @@ function HomePage() {
             <p>Registrera dig, hoppa på scootern och kör igång</p>
             <div className="home__btn-wrapper">
               <Link to="/auth">
-                <BtnPrimary text={"Logga in"} />
+                <BtnPrimary text={"Kör igång"} />
               </Link>
-              <div className="home__btn-spacer">
-                <Link to="/auth">
-                  <BtnSecondary text={"Registrera dig"} />
-                </Link>
-              </div>
+              <div className="home__btn-spacer"></div>
             </div>
           </div>
         </div>
