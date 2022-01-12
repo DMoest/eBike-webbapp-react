@@ -1,14 +1,19 @@
 import { useState } from "react";
-import { NavLink } from "react-router-dom";
 import { useSelector, useDispatch } from "react-redux";
-import { logout } from "../../Auth/authSlice";
+import { logout } from "@/pages/Auth/authSlice";
 
+// CSS
 import "./Nav.css";
 
-import menu__icon_dark from "../../../assets/img/icons/menu__icon-dark.svg";
-import menu__icon_white from "../../../assets/img/icons/menu__icon-white.svg";
+// Components
+import NavMenu from "./NavMenu/NavMenu";
 
-function Nav() {
+// Icons
+import menu__icon_dark from "@/assets/img/icons/menu__icon-dark.svg";
+import menu__icon_white from "@/assets/img/icons/menu__icon-white.svg";
+import logo from "@/assets/img/logo__ebike.svg";
+
+function Nav({ marginBottom, noBackground }) {
   const [showNav, setShowNav] = useState(false);
   const onClick = () => setShowNav(!showNav);
 
@@ -21,45 +26,25 @@ function Nav() {
 
   return (
     <>
-      {showNav ? (
-        <div className="nav__fullpage-outer-wrapper">
-          <div className="nav__fullpage-inner-wrapper">
-            <NavLink to="/" className="nav__link">
-              Hem
-            </NavLink>
-            <NavLink to="/travels" className="nav__link">
-              Mina Resor
-            </NavLink>
-            <NavLink to="/profile" className="nav__link">
-              Profil
-            </NavLink>
-            <div className="nav__link" onClick={handleLogout}>
-              Logga ut
-            </div>
-          </div>
-        </div>
-      ) : null}
+      {showNav ? <NavMenu handleLogout={handleLogout} /> : null}
 
-      <div className="wrapper">
-        <div className="nav__outer-wrapper">
-          <div className="nav__brand">Ebike</div>
-          <div className="nav__menu" onClick={onClick}>
-            {showNav ? (
-              <img
-                src={menu__icon_white}
-                alt="Menu icon"
-                className="nav__icon"
-              />
-            ) : (
-              <img
-                src={menu__icon_dark}
-                alt="Menu icon"
-                className="nav__icon"
-              />
-            )}
-          </div>
+      <div
+        className="nav__outer-wrapper"
+        style={{ backgroundColor: noBackground ? "transparent" : "#fff" }}
+      >
+        <div className="nav__brand">
+          <img src={logo} alt="logo" class="nav__logo" />
+          Ebike
+        </div>
+        <div className="nav__menu" onClick={onClick}>
+          {showNav ? (
+            <img src={menu__icon_white} alt="Menu icon" className="nav__icon" />
+          ) : (
+            <img src={menu__icon_dark} alt="Menu icon" className="nav__icon" />
+          )}
         </div>
       </div>
+      {marginBottom ? <div className="nav__spacer"></div> : null}
     </>
   );
 }

@@ -1,0 +1,16 @@
+.errornotice__outer-wrapper {
+  width: 100%;
+  background: rgb(235, 91, 91);
+  color: #fff;
+  border-radius: 4px;
+  margin: 15px 0px;
+  padding: 15px;
+  display: flex;
+  flex-direction: row;
+  font-size: 0.8em;
+}
+
+.error__icon {
+  width: 15px;
+  margin-right: 5px;
+}

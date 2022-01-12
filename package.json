@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "private": true,
   "dependencies": {
+    "@craco/craco": "^6.4.3",
     "@reduxjs/toolkit": "^1.7.1",
     "@testing-library/jest-dom": "^5.16.1",
     "@testing-library/react": "^12.1.2",
@@ -10,10 +11,12 @@
     "@types/react-redux": "^7.1.21",
     "axios": "^0.24.0",
     "cordova": "^11.0.0",
+    "leaflet": "^1.7.1",
     "react": "^17.0.2",
     "react-document-title": "^2.0.3",
     "react-dom": "^17.0.2",
     "react-icons": "^4.3.1",
+    "react-leaflet": "^3.2.4",
     "react-lottie": "^1.2.3",
     "react-redux": "^7.2.6",
     "react-router-dom": "^5.3.0",
@@ -26,7 +29,7 @@
     "build": "reco checkversion && react-scripts build && reco copy && cordova build",
     "test": "echo \"Error: no test specified\" && exit 1",
     "eject": "react-scripts eject",
-    "reactstart": "react-scripts start"
+    "reactstart": "craco start"
   },
   "eslintConfig": {
     "extends": [

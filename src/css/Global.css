@@ -1,5 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap");
-
 @font-face {
   font-family: "Moderat Regular";
   src: url("../assets/fonts/Moderat-Extended-Regular.woff2");
@@ -7,7 +5,17 @@
 
 @font-face {
   font-family: "Moderat Medium";
-  src: url("../assets/fonts/Moderat-Extended-Medium.woff2");
+  src: url("@/assets/fonts/Moderat-Extended-Medium.woff2");
+}
+
+@font-face {
+  font-family: "Inter Medium";
+  src: url("@/assets/fonts/Inter-Medium.ttf");
+}
+
+@font-face {
+  font-family: "Inter Regular";
+  src: url("@/assets/fonts/Inter-Regular.ttf");
 }
 
 /*Basics*/
@@ -19,13 +27,13 @@
 }
 
 body {
-  font-family: "Inter", sans-serif;
+  font-family: "Inter Regular", sans-serif;
   background: #fff;
 }
 
 .wrapper {
   width: 100%;
-  padding: 0px 20px;
+  padding: 20px;
 }
 
 h1,
@@ -52,11 +60,32 @@ h3 {
 }
 
 p {
-  opacity: 0.7;
   line-height: 1.5em;
+  color: rgb(109, 108, 108);
 }
 
 a {
   color: #000;
   text-decoration: none;
+}
+
+.bottom-content__wrapper {
+  position: fixed;
+  bottom: 0;
+  padding: 20px;
+  background: #fff;
+  width: 100%;
+  z-index: 9999;
+}
+
+.map__container {
+  height: 75vh;
+  background: #ebebeb;
+  margin-bottom: 20px;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.leaflet-container {
+  height: 100%;
 }

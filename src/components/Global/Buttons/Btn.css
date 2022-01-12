@@ -5,8 +5,12 @@
   outline: none;
   border: none;
   padding: 12px 25px;
-  font-weight: 600;
   cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Inter Medium", sans-serif;
+  font-weight: 500;
 }
 
 .btn__primary {
@@ -16,7 +20,11 @@
 }
 
 .btn__secondary {
-  background: #eee5df;
+  background: #f1eff1;
   color: #000;
-  border: 1px solid #000;
+}
+
+.btn__icon {
+  width: 15px;
+  margin-right: 5px;
 }

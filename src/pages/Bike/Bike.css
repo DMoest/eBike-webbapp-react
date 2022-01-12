@@ -1,0 +1,14 @@
+.bike__details-wrapper {
+  margin: 30px 0px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.bike__btn-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.bike__icon {
+  margin-right: 7px;
+}

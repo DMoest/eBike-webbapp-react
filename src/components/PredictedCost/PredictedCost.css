@@ -1,9 +1,10 @@
-.counter {
-    width: 100%;
-    text-align: center;
-    font-size: 36px;
-    font-weight: bold;
-    color: green;
-    margin-top: 1em;
-    margin-bottom: 1em;
+.predictedcost__counter {
+  width: 100%;
+  font-size: 1.5em;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+.predictedcost__counter span {
+  font-weight: 500;
 }

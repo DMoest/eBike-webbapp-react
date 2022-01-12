@@ -1,0 +1,9 @@
+.warning {
+  width: 90%;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  padding: 0.5em;
+  border: 2px solid orange;
+  border-radius: 10px;
+  text-align: center;
+}
