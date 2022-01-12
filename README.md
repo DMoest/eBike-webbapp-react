@@ -1,3 +1,5 @@
+[![Node.js CI](https://github.com/Den-geografiska-oredan/eBike-webbapp-react/actions/workflows/node.js.yml/badge.svg)](https://github.com/Den-geografiska-oredan/eBike-webbapp-react/actions/workflows/node.js.yml)
+
 # Building and Running the app
 
 ## Installing Cordova
