@@ -1,70 +1,50 @@
-# Getting Started with Create React App
+[![Node.js CI](https://github.com/Den-geografiska-oredan/eBike-webbapp-react/actions/workflows/node.js.yml/badge.svg)](https://github.com/Den-geografiska-oredan/eBike-webbapp-react/actions/workflows/node.js.yml)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Building and Running the app
 
-## Available Scripts
+## Installing Cordova
+To get started with building and running the application you need to ensure that Cordova is installed on your system. To do this you can run:
 
-In the project directory, you can run:
+On Linux/Mac
 
-### `npm start`
+    sudo npm install -g cordova
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+On Windows
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+    npm install -g cordova
 
-### `npm test`
+## Installation
+The application is build with react and can be built to run on Android of Ios device thorugh cordova with the help of the react-cordova package. Before building the app install this package globally with:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+    npm install -g react.cordova
 
-### `npm run build`
+Then install all required dependencies with:
+    npm install
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Add desired platforms for the Cordova application
+To be able to run the application on Android devices use:
+    
+    cordova platform add android
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+If you want run on ios devices use:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+    cordova platform add ios
 
-### `npm run eject`
+If you want to be able to run on both devices use both of the above commands.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Build the appliction
+You can now build the application for the desired platforms by using:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+    npm run build
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Run the application
+Befor running the application you must have a device available. either by an emulator via Android Studio och Xcode or by running the application with the help av th VS-Code extension cordova-tools. The latter simulates the desired platform in a browser window.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+To launch the application you can now use:
 
-## Learn More
+    cordova run <platform>
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Code Splitting
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)

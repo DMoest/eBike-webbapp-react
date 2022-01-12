@@ -1,19 +1,28 @@
 {
   "files": {
-    "main.css": "./static/css/main.d14fc203.css",
-    "main.js": "./static/js/main.c0d46d1d.js",
+    "main.css": "./static/css/main.5b63653a.css",
+    "main.js": "./static/js/main.d046b53f.js",
     "static/js/787.d820a889.chunk.js": "./static/js/787.d820a889.chunk.js",
-    "static/media/ebike__hero-ill.png": "./static/media/ebike__hero-ill.38824f3acc2996caf1db.png",
-    "static/media/ebike__frontend-illustration.png": "./static/media/ebike__frontend-illustration.da37e62f2c5f478dd160.png",
-    "static/media/ebike__simulation-illustration.png": "./static/media/ebike__simulation-illustration.e63f583dc312638a8df5.png",
+    "static/media/Inter-Medium.ttf": "./static/media/Inter-Medium.e7231ba33760832432b8.ttf",
+    "static/media/Inter-Regular.ttf": "./static/media/Inter-Regular.2391725004ae05a27e8e.ttf",
+    "static/media/Moderat-Extended-Regular.woff2": "./static/media/Moderat-Extended-Regular.85beec7d57cd3acc006a.woff2",
+    "static/media/Moderat-Extended-Medium.woff2": "./static/media/Moderat-Extended-Medium.e561c18c40ddef3838c9.woff2",
+    "static/media/home__ill.svg": "./static/media/home__ill.d8ace0ccc5f4e048bdd9815767c31aa6.svg",
+    "static/media/menu__bg.svg": "./static/media/menu__bg.ab6a944b8f5f6101b278af04f9ee3f6f.svg",
     "index.html": "./index.html",
-    "static/media/ebike__logo-white.svg": "./static/media/ebike__logo-white.f82ece3c53474f5d14e8a3423fc19af8.svg",
-    "main.d14fc203.css.map": "./static/css/main.d14fc203.css.map",
-    "main.c0d46d1d.js.map": "./static/js/main.c0d46d1d.js.map",
+    "static/media/icon__scooter-white.svg": "./static/media/icon__scooter-white.f33ffe6bc461b9f15b29b70a35b93707.svg",
+    "static/media/icon__profile-black.svg": "./static/media/icon__profile-black.a296afc6f576da859ad3a6147e33871e.svg",
+    "static/media/logo__ebike.svg": "./static/media/logo__ebike.f526a4293441a32cfd9db9303e463230.svg",
+    "static/media/menu__icon-white.svg": "./static/media/menu__icon-white.60bfd4e811f5f249c763bea7e18c1914.svg",
+    "static/media/icon__battery.svg": "./static/media/icon__battery.9410af5a2b702caa4223c1123abe94be.svg",
+    "static/media/menu__icon-dark.svg": "./static/media/menu__icon-dark.ec9d9c6a5a8b0df21c40d85084727e6a.svg",
+    "static/media/icon__error.svg": "./static/media/icon__error.f554c54b740822c41bc96d00be603a7d.svg",
+    "main.5b63653a.css.map": "./static/css/main.5b63653a.css.map",
+    "main.d046b53f.js.map": "./static/js/main.d046b53f.js.map",
     "787.d820a889.chunk.js.map": "./static/js/787.d820a889.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.d14fc203.css",
-    "static/js/main.c0d46d1d.js"
+    "static/css/main.5b63653a.css",
+    "static/js/main.d046b53f.js"
   ]
 }

@@ -13,6 +13,7 @@
     "cordova": "^11.0.0",
     "leaflet": "^1.7.1",
     "react": "^17.0.2",
+    "react-cookie": "^4.1.1",
     "react-document-title": "^2.0.3",
     "react-dom": "^17.0.2",
     "react-icons": "^4.3.1",
@@ -26,7 +27,7 @@
   },
   "scripts": {
     "start": "reco serve",
-    "build": "reco checkversion && react-scripts build && reco copy && cordova build",
+    "build": "reco checkversion && craco build &&  reco copy && cordova build",
     "test": "echo \"Error: no test specified\" && exit 1",
     "eject": "react-scripts eject",
     "reactstart": "craco start"

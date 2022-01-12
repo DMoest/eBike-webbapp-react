@@ -7,12 +7,15 @@ export const authSlice = createSlice({
   },
   reducers: {
     login: (state) => {
-      // Todo: Async call to api and uppdate state with user or appropriate error.
-      state.authToken = "authenticated";
+      // // Todo: Async call to api and uppdate state with user or appropriate error.
+      // fetch('http://localhost:8000/oauth/authorize?client_id=3&response_type=code&redirect_uri=http://localhost:3000&scope=user&state=statestatestatestatestatestatestatestate')
+      //   .then(response => response.json())
+      //   .then(data => this.setState({ totalReactPackages: data.total }));
+      window.location.href = "http://localhost:8000/login/user/mobile/github";
     },
     register: (state) => {
       // Todo: Async call to api to register new user and update state accordingly.
-      state.authToken = "authenticated";
+      window.location.href = "http://localhost:8000/login/user/mobile/github";
     },
     logout: (state) => {
       // Todo: Async call to api?

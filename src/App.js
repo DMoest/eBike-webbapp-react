@@ -15,37 +15,37 @@ import Profile from "@/pages/Profile/Profile";
 // CSS
 import "./css/Global.css";
 
-const App = () => {
+const App = (props) => {
   const root = useSelector((state) => state.root);
+
+  const { cookies } = props;
+
+  const token = cookies.get("XSRF-TOKEN");
 
   return (
     <>
       {
         (console.log(root),
-        !root.auth.authToken && !root.rent.bike ? (
+        !token ? (
           <>
-            <BrowserRouter>
-              <Switch>
-                <Route exact path="/" component={HomePage} />
-                <Route exact path="/auth" component={Auth} />
-              </Switch>
-            </BrowserRouter>
+            <Switch>
+              <Route exact path="/" component={HomePage} />
+              <Route exact path="/auth" component={Auth} />
+            </Switch>
           </>
-        ) : root.auth.authToken && root.rent.bike ? (
+        ) : root.rent.bike ? (
           <>
             <Route exact path="/" component={BikeActive} />
           </>
         ) : (
           <>
-            <BrowserRouter>
-              <Switch>
-                <Route exact path="/" component={Main} />
-                <Route exact path="/rent" component={Rent} />
-                <Route exact path="/bike" component={Bike} />
-                <Route exact path="/travels" component={Travels} />
-                <Route exact path="/profile" component={Profile} />
-              </Switch>
-            </BrowserRouter>
+            <Switch>
+              <Route exact path="/" render={() => <Main cookies={cookies} />} />
+              <Route exact path="/rent" component={Rent} />
+              <Route exact path="/bike" component={Bike} />
+              <Route exact path="/travels" component={Travels} />
+              <Route exact path="/profile" component={Profile} />
+            </Switch>
           </>
         ))
       }
