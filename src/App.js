@@ -9,15 +9,18 @@ import BikeActive from './components/BikeActive/BikeActive';
 
 import './App.css';
 
-const App = () => {
+const App = (props) => {
   const root = useSelector((state) => state.root);
+  
+  const { cookies } = props;
 
+  const token = cookies.get('XSRF-TOKEN');
 
   return (
     <>
       { 
       console.log(root),
-      !root.auth.authToken && !root.rent.bike ? (
+      !token ? (
         <>
           <Switch>
             <Route exact path="/" component={HomePage} />
@@ -25,14 +28,14 @@ const App = () => {
           </Switch>
         </>
       ):
-      root.auth.authToken && root.rent.bike ? (
+      root.rent.bike ? (
           <>
               <Route exact path="/" component={BikeActive} />
           </>
         ) : (
           <>
             <Switch>
-              <Route exact path="/" component={Main} />
+              <Route exact path="/" render={() => (<Main cookies={cookies}/>)} />
               <Route exact path="/rent" component={Rent} />
             </Switch>
           </>

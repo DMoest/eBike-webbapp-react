@@ -1,6 +1,7 @@
 import React from 'react';
 import DocumentTitle from 'react-document-title'
-import { Link } from 'react-router-dom';
+
+import { Link, useHistory } from 'react-router-dom';
 import { useSelector, useDispatch } from 'react-redux';
 import { logout } from '../Auth/authSlice';
 
@@ -11,13 +12,20 @@ import './Main.css';
 // Img
 import logo from '../../assets/img/ebike__logo-white.svg';
 
-function Main() {
+function Main(props) {
     const dispatch = useDispatch()
+    const history = useHistory();
+    const { cookies } = props;
 
     const handleLogout = () => {
-        console.log("Logout");
-        dispatch(logout());
+        cookies.remove('XSRF-TOKEN');
+        //dispatch(logout());
     };
+
+    function handleRental() {
+        console.log("Navigating ro rent!");
+        history.push("/rent");
+      }
 
     return (
         (<>
@@ -38,9 +46,7 @@ function Main() {
                 </div>
             </div>
             <div className="main-content__outer-wrapper">
-                <div class="btn-full-width-large">
-                    <Link to="/rent"><h1>Rent bike</h1></Link>
-                </div>
+                <button class="btn-full-width-large" onClick={handleRental} />
             </div>
         </>)
     )

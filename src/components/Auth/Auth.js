@@ -23,11 +23,9 @@ const Auth = () => {
 
     const handleLogin = () => {
         dispatch(login());
-        history.replace("/");
     };
     const handleRegister = () => {
-        dispatch(register());
-        history.replace("/");        
+        dispatch(register());        
     }
 
     return (
