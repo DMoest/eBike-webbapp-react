@@ -11,11 +11,11 @@ export const authSlice = createSlice({
       // fetch('http://localhost:8000/oauth/authorize?client_id=3&response_type=code&redirect_uri=http://localhost:3000&scope=user&state=statestatestatestatestatestatestatestate')
       //   .then(response => response.json())
       //   .then(data => this.setState({ totalReactPackages: data.total }));
-      window.location.href = 'http://localhost:8000/login/github';
+      window.location.href = 'http://localhost:8000/login/mobile/github';
       },
     register: (state) => {
         // Todo: Async call to api to register new user and update state accordingly.
-        window.location.href = 'http://localhost:8000/login/github';
+        window.location.href = 'http://localhost:8000/login/mobile/github';
     },
     logout: (state) => {
       // Todo: Async call to api?
