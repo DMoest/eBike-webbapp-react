@@ -3,10 +3,10 @@ import { useSelector } from "react-redux";
 import { Switch, Route, BrowserRouter } from "react-router-dom";
 
 // Pages
-import Main from "@/pages/Main/Main";
+import Main from "@/components/Main/Main";
 import Rent from "@/pages/Rent/Rent";
 import Bike from "@/pages/Bike/Bike";
-import Auth from "@/pages/Auth/Auth";
+import Auth from "@/components/Auth/Auth";
 import HomePage from "@/pages/HomePage/HomePage";
 import BikeActive from "@/pages/BikeActive/BikeActive";
 import Travels from "@/pages/Travels/Travels";

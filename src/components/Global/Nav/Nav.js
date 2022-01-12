@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { useSelector, useDispatch } from "react-redux";
-import { logout } from "@/pages/Auth/authSlice";
+import { logout } from "@/components/Auth/authSlice";
 
 // CSS
 import "./Nav.css";

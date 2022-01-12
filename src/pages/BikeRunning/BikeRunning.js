@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+
 import DocumentTitle from "react-document-title";
 
 // Components
@@ -7,15 +8,14 @@ import BtnPrimary from "@/components/Global/Buttons/BtnPrimary";
 import BtnSecondary from "@/components/Global/Buttons/BtnSecondary";
 import Map from "@/components/Global/Map/Map";
 import ErrorNotice from "@/components/Global/ErrorNotice/ErrorNotice";
-// import ErrorBoundary from "@/components/Global/ErrorBoundary/ErrorBoundary";
 
-// CSS & Assets
-import "./Bike.css";
-import icon__battery from "@/assets/img/icons/icon__battery.svg";
+// CSS
+import "./BikeRunning.css";
 
+// API
 import Api from "@/helper/api";
 
-function Bike({ bikeId }) {
+function BikeRunning({ bikeId }) {
   const [bikeData, setBikeData] = useState();
   const [bikeLoaded, setBikeLoaded] = useState(false);
   const [error, setError] = useState();
@@ -35,8 +35,8 @@ function Bike({ bikeId }) {
 
   return (
     <>
+      <DocumentTitle title="Ebike - Aktiv Scooter"></DocumentTitle>
       <Nav />
-      <DocumentTitle title="Ebike - Hyr"></DocumentTitle>
       {bikeLoaded ? (
         <Map bikePosition={[bikeData.latitude, bikeData.longitude]} />
       ) : null}
@@ -48,18 +48,10 @@ function Bike({ bikeId }) {
             Lås upp scootern genom att klicka på knappen nedan. Uthyrningstiden
             startar direkt efter lyckad upplåsning.
           </p>
-          {bikeLoaded ? (
-            <div className="bike__details-wrapper">
-              <div className="bike__name">
-                Ebike ID: {bikeData._id || "Ingen data hittad"}
-              </div>
-              <div className="bike__details">
-                <img src={icon__battery} alt="battery" class="bike__icon" />
-                {bikeData.battery || "Ingen data hittad"}%
-              </div>
-            </div>
-          ) : null}
-          {error ? <ErrorNotice error={error} /> : null}
+          <div className="bike__details-wrapper">
+            <div className="bike__name"></div>
+            <div className="bike__details"></div>
+          </div>
           <div className="bike__btn-wrapper">
             <BtnPrimary text={"Hyr scooter"} />
             <BtnSecondary text={"Avbryt"} />
@@ -70,4 +62,4 @@ function Bike({ bikeId }) {
   );
 }
 
-export default Bike;
+export default BikeRunning;
