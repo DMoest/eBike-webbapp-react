@@ -55,6 +55,7 @@ function Main(props) {
             </Link>
           </div>
         </div>
+        <BtnPrimary text={"Logga ut"} onClick={handleLogout} />
       </div>
     </>
   );
