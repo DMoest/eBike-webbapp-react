@@ -25,8 +25,8 @@ const App = (props) => {
   return (
     <>
       {
-        (console.log(root),
-        !token ? (
+        (
+        !token.lenght() > 0 ? (
           <>
             <Switch>
               <Route exact path="/" component={HomePage} />

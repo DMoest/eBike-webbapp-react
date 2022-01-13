@@ -1,28 +1,32 @@
 {
   "files": {
-    "main.css": "./static/css/main.5b63653a.css",
-    "main.js": "./static/js/main.d046b53f.js",
-    "static/js/787.d820a889.chunk.js": "./static/js/787.d820a889.chunk.js",
-    "static/media/Inter-Medium.ttf": "./static/media/Inter-Medium.e7231ba33760832432b8.ttf",
-    "static/media/Inter-Regular.ttf": "./static/media/Inter-Regular.2391725004ae05a27e8e.ttf",
-    "static/media/Moderat-Extended-Regular.woff2": "./static/media/Moderat-Extended-Regular.85beec7d57cd3acc006a.woff2",
-    "static/media/Moderat-Extended-Medium.woff2": "./static/media/Moderat-Extended-Medium.e561c18c40ddef3838c9.woff2",
-    "static/media/home__ill.svg": "./static/media/home__ill.d8ace0ccc5f4e048bdd9815767c31aa6.svg",
-    "static/media/menu__bg.svg": "./static/media/menu__bg.ab6a944b8f5f6101b278af04f9ee3f6f.svg",
+    "main.css": "./static/css/main.2b21d3a8.chunk.css",
+    "main.js": "./static/js/main.a58c2359.chunk.js",
+    "main.js.map": "./static/js/main.a58c2359.chunk.js.map",
+    "runtime-main.js": "./static/js/runtime-main.7e90fdde.js",
+    "runtime-main.js.map": "./static/js/runtime-main.7e90fdde.js.map",
+    "static/js/2.a3c047b6.chunk.js": "./static/js/2.a3c047b6.chunk.js",
+    "static/js/2.a3c047b6.chunk.js.map": "./static/js/2.a3c047b6.chunk.js.map",
+    "static/js/3.004e9453.chunk.js": "./static/js/3.004e9453.chunk.js",
+    "static/js/3.004e9453.chunk.js.map": "./static/js/3.004e9453.chunk.js.map",
     "index.html": "./index.html",
-    "static/media/icon__scooter-white.svg": "./static/media/icon__scooter-white.f33ffe6bc461b9f15b29b70a35b93707.svg",
-    "static/media/icon__profile-black.svg": "./static/media/icon__profile-black.a296afc6f576da859ad3a6147e33871e.svg",
-    "static/media/logo__ebike.svg": "./static/media/logo__ebike.f526a4293441a32cfd9db9303e463230.svg",
-    "static/media/menu__icon-white.svg": "./static/media/menu__icon-white.60bfd4e811f5f249c763bea7e18c1914.svg",
-    "static/media/icon__battery.svg": "./static/media/icon__battery.9410af5a2b702caa4223c1123abe94be.svg",
-    "static/media/menu__icon-dark.svg": "./static/media/menu__icon-dark.ec9d9c6a5a8b0df21c40d85084727e6a.svg",
-    "static/media/icon__error.svg": "./static/media/icon__error.f554c54b740822c41bc96d00be603a7d.svg",
-    "main.5b63653a.css.map": "./static/css/main.5b63653a.css.map",
-    "main.d046b53f.js.map": "./static/js/main.d046b53f.js.map",
-    "787.d820a889.chunk.js.map": "./static/js/787.d820a889.chunk.js.map"
+    "static/css/main.2b21d3a8.chunk.css.map": "./static/css/main.2b21d3a8.chunk.css.map",
+    "static/js/2.a3c047b6.chunk.js.LICENSE.txt": "./static/js/2.a3c047b6.chunk.js.LICENSE.txt",
+    "static/media/Global.css": "./static/media/Moderat-Extended-Regular.85beec7d.woff2",
+    "static/media/home__ill.d8ace0cc.svg": "./static/media/home__ill.d8ace0cc.svg",
+    "static/media/icon__battery.9410af5a.svg": "./static/media/icon__battery.9410af5a.svg",
+    "static/media/icon__error.f554c54b.svg": "./static/media/icon__error.f554c54b.svg",
+    "static/media/icon__profile-black.a296afc6.svg": "./static/media/icon__profile-black.a296afc6.svg",
+    "static/media/icon__scooter-white.f33ffe6b.svg": "./static/media/icon__scooter-white.f33ffe6b.svg",
+    "static/media/logo__ebike.f526a429.svg": "./static/media/logo__ebike.f526a429.svg",
+    "static/media/menu__bg.ab6a944b.svg": "./static/media/menu__bg.ab6a944b.svg",
+    "static/media/menu__icon-dark.ec9d9c6a.svg": "./static/media/menu__icon-dark.ec9d9c6a.svg",
+    "static/media/menu__icon-white.60bfd4e8.svg": "./static/media/menu__icon-white.60bfd4e8.svg"
   },
   "entrypoints": [
-    "static/css/main.5b63653a.css",
-    "static/js/main.d046b53f.js"
+    "static/js/runtime-main.7e90fdde.js",
+    "static/js/2.a3c047b6.chunk.js",
+    "static/css/main.2b21d3a8.chunk.css",
+    "static/js/main.a58c2359.chunk.js"
   ]
 }
